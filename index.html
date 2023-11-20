@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shopping List</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="mainNav">
+        <div class="navdiv">
+          <h1 class="titleNav">Crud System</h1>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="div-btn-create">
+        <button class="btn-create" id="btn-crt">add contact</button>
+      </div>
+      <div class="create-popUp" id="crt-ppu-d" hidden>
+        <h2 class="popUp-title">Contact Info</h2>
+        <div class="input-div">
+          <fieldset>
+            <form id="add-form">
+              <input
+              data-index="new"
+                class="add-info"
+                required
+                id="nome"
+                type="text"
+                name="nome"
+                placeholder="Type-Name"
+              />
+
+              <input
+              data-index="new"
+                class="add-info"
+                required
+                id="numero"
+                type="number"
+                nome="cellphone"
+                placeholder="Type-Cellphone"
+              />
+
+              <input
+              data-index="new"
+                class="add-info"
+                required
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Type-Email"
+              />
+
+              <input
+              data-index="new"
+                class="add-info"
+                required
+                id="assunto"
+                type="text"
+                name="assunto"
+                placeholder="Type-Assunto"
+              />
+            </form>
+          </fieldset>
+
+          <div class="btn-popUp-div">
+            <button id="btn-add" class="btn-create-popUp">Add Contact</button>
+            <button id="btn-exit" class="btn-create-cancel-popUp">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="create-popUp" id="edit-ppu-d" hidden>
+        <h2 class="popUp-title">Edit Info</h2>
+        <div class="input-div">
+          <fieldset>
+            <form id="edit-form">
+              <input
+                class="edit-info"
+                required
+                id="edit-nome"
+                type="text"
+                name="nome"
+                placeholder="Type-Name"
+              />
+
+              <input
+                class="edit-info"
+                required
+                id="edit-numero"
+                type="number"
+                nome="cellphone"
+                placeholder="Type-Cellphone"
+              />
+
+              <input
+                class="edit-info"
+                required
+                id="edit-email"
+                type="email"
+                name="email"
+                placeholder="Type-Email"
+              />
+
+              <input
+                class="edit-info"
+                required
+                id="edit-assunto"
+                type="text"
+                name="assunto"
+                placeholder="Type-Assunto"
+              />
+            </form>
+          </fieldset>
+
+          <div class="btn-popUp-div">
+            <button id="btn-save" class="btn-edit-popUp">Save Contact</button>
+            <button id="btn-close" class="btn-edit-cancel-popUp">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="content view">
+        <table class="table-content" id="tab">
+          <thead>
+            <tr>
+              <th class="t-head">Nome</th>
+              <th class="t-head">Numero</th>
+              <th class="t-head">Email</th>
+              <th class="t-head">Assunto</th>
+              <th class="t-head last">Acao</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

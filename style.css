@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* body header .mainNav {
+  background-color: #201f1f;
+}
+* body header .mainNav .navdiv {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10%;
+}
+* body header .mainNav .navdiv .titleNav {
+  color: white;
+  padding-top: 2px;
+  font-size: 30px;
+}
+* body main .div-btn-create {
+  margin: 0 10%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+* body main .div-btn-create .btn-create {
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  width: 25%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+* body main .div-btn-create .btn-create:hover {
+  background-color: #1e1e1e;
+  font-size: 16px;
+  transition: 0.5s;
+}
+* body main .create-popUp {
+  display: flexbox;
+  position: relative;
+  border-radius: 15px;
+  border: 2px black solid;
+  background-color: gray;
+  height: 300px;
+  width: 300px;
+  padding-top: 5px;
+  margin: auto;
+}
+* body main .create-popUp .popUp-title {
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: 0px auto;
+}
+* body main .create-popUp .input-div {
+  text-align: center;
+  height: 60%;
+  margin: 10px auto;
+}
+* body main .create-popUp .input-div div {
+  margin-left: 25%;
+  margin-right: 40%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: start;
+}
+* body main .create-popUp .input-div div span {
+  color: white;
+}
+* body main .create-popUp .input-div div input {
+  border-radius: 2px;
+  border: 1px lightgray solid;
+}
+* body main .create-popUp .input-div div input::-webkit-outer-spin-button,
+* body main .create-popUp .input-div div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* body main .create-popUp .btn-popUp-div {
+  display: relative;
+}
+* body main .create-popUp .btn-popUp-div .btn-create-popUp,
+* body main .create-popUp .btn-popUp-div .btn-edit-popUp {
+  background-color: #4d4d4d;
+  margin: 0 25%;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  color: white;
+}
+* body main .create-popUp .btn-popUp-div .btn-create-cancel-popUp,
+* body main .create-popUp .btn-popUp-div .btn-edit-cancel-popUp {
+  background-color: #191919;
+  margin: 5px 0 0 25%;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  color: white;
+}
+* body main .create-popUp .btn-popUp-div .btn-create-popUp:hover,
+* body main .create-popUp .btn-popUp-div .btn-create-cancel-popUp:hover,
+* body main .create-popUp .btn-popUp-div .btn-edit-cancel-popUp:hover,
+* body main .create-popUp .btn-popUp-div .btn-edit-popUp:hover {
+  background-color: #2f2f2f;
+}
+* body main .content {
+  padding: 0 10%;
+  margin-top: 10px;
+}
+* body main .content .table-content {
+  width: 100%;
+  border-radius: 4px;
+}
+* body main .content .table-content thead {
+  background-color: black;
+}
+* body main .content .table-content th {
+  width: 20%;
+}
+* body main .content .table-content .t-head {
+  color: white;
+  font-weight: normal;
+  border-right: 1px white solid;
+}
+* body main .content .table-content .last {
+  border-right: none;
+}
+* body main .content .table-content .newItem {
+  color: white;
+  font-size: 10px;
+}
+* body main .content .table-content tbody {
+  background-color: slategrey;
+}
+* body main .content .table-content td {
+  padding: 5px;
+  text-align: center;
+}
+* body main .content .table-content td button {
+  padding: 2px;
+  width: auto;
+}
+* body main .content .table-content td .btn-edit {
+  background-color: orange;
+  color: black;
+  border-radius: 3px;
+  border: none;
+}
+* body main .content .table-content td .btn-edit:hover {
+  background-color: #e89905;
+}
+* body main .content .table-content td .btn-del {
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+* body main .content .table-content td .btn-del:hover {
+  background-color: #d80202;
+}

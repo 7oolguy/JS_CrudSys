@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  body {
+    header {
+      .mainNav {
+        background-color: rgb(32, 31, 31);
+        .navdiv {
+          display: flex;
+          justify-content: center;
+          height: 40px;
+          width: 100%;
+          margin-bottom: 10%;
+          .titleNav {
+            color: white;
+            padding-top: 2px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    main {
+      .div-btn-create {
+        margin: 0 10%;
+        text-align: center;
+        margin-bottom: 10px;
+        .btn-create {
+          background-color: black;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          height: 40px;
+          width: 25%;
+          transition: 0.5s;
+          cursor: pointer;
+        }
+        .btn-create:hover {
+          background-color: rgb(30, 30, 30);
+          font-size: 16px;
+          transition: 0.5s;
+        }
+      }
+      .create-popUp {
+        display: flexbox;
+        position: relative;
+        border-radius: 15px;
+        border: 2px black solid;
+        background-color: gray;
+        height: 300px;
+        width: 300px;
+        padding-top: 5px;
+        margin: auto;
+        .popUp-title {
+          text-align: center;
+          color: white;
+          width: 100%;
+          margin: 0px auto;
+        }
+        .input-div {
+          text-align: center;
+          height: 60%;
+          margin: 10px auto;
+
+          div {
+            margin-left: 25%;
+            margin-right: 40%;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            text-align: start;
+            span {
+              color: white;
+            }
+            input {
+              border-radius: 2px;
+              border: 1px lightgray solid;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+        }
+        .btn-popUp-div {
+          display: relative;
+          .btn-create-popUp, .btn-edit-popUp {
+            background-color: rgb(77, 77, 77);
+            margin: 0 25%;
+            width: 100%;
+            border: none;
+            border-radius: 3px;
+            padding: 3px 5px;
+            color: white;
+          }
+          .btn-create-cancel-popUp, .btn-edit-cancel-popUp {
+            background-color: rgb(25, 25, 25);
+            margin: 5px 0 0 25%;
+            width: 100%;
+            border: none;
+            border-radius: 3px;
+            padding: 3px 5px;
+            color: white;
+          }
+          .btn-create-popUp:hover, .btn-create-cancel-popUp:hover, .btn-edit-cancel-popUp:hover, .btn-edit-popUp:hover{
+            background-color: rgb(47, 47, 47);
+          }
+        }
+      }
+      .content {
+        padding: 0 10%;
+        margin-top: 10px;
+        .table-content {
+          width: 100%;
+          border-radius: 4px;
+          thead{
+            background-color: black;
+          }
+          th {
+            width: 20%;
+          }
+          .t-head {
+            color: white;
+            font-weight: normal;
+            border-right: 1px white solid;
+          }
+          .last {
+            border-right: none;
+          }
+          .newItem{
+                color: white;
+                font-size: 10px;
+                
+            }
+            tbody{
+                background-color: slategrey;
+            }
+          td {
+            padding: 5px;
+            text-align: center;
+            button {
+                
+              padding: 2px;
+              width: auto;
+            }
+            .btn-edit {
+              background-color: orange;
+              color: black;
+              border-radius: 3px;
+              border: none;
+            }
+            .btn-edit:hover {
+              background-color: rgb(232, 153, 5);
+            }
+            .btn-del {
+              background-color: red;
+              color: white;
+              border-radius: 3px;
+              border: none;
+            }
+            .btn-del:hover {
+              background-color: rgb(216, 2, 2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
